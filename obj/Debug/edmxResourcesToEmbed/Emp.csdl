@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebAPIModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="WebAPIEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="emps" EntityType="WebAPIModel.emp" />
+  </EntityContainer>
+  <EntityType Name="emp">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="emp_name" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="address" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="phone" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

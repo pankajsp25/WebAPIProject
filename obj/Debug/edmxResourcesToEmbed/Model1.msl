@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebAPIModelStoreContainer" CdmEntityContainer="WebAPIEntities1">
+    <EntitySetMapping Name="emps">
+      <EntityTypeMapping TypeName="WebAPIModel.emp">
+        <MappingFragment StoreEntitySet="emp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="emp_name" ColumnName="emp_name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login_Table">
+      <EntityTypeMapping TypeName="WebAPIModel.Login_Table">
+        <MappingFragment StoreEntitySet="Login_Table">
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
